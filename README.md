@@ -1,63 +1,69 @@
-*Mohit Pawaskar*
+# ✈️ British Airways Review Analysis  
+**Project by:** *Mohit Pawaskar*  
+**Organization:** @Forage | @British Airways (BA)  
+**Dataset Source:** Skytrax Reviews  
 
-This is GITHUB repo for British Airways Review Analysis
+---
 
-It is project given by @Forage of the @British Airways (BA)
+## 📌 Overview
 
-Here is the step by step guide what I did
+This repository contains analysis and insights derived from customer reviews of British Airways (BA), collected from the Skytrax website. The project was conducted in two main tasks provided by the @Forage virtual experience program.
 
+---
 
-# TASK 1 
+## 🧹 TASK 1 – **Review Analysis & Insights**
 
-- 01. Data Collection : Collected the Data from the website called Skytrax which had around 4000 reviews about the BA.
-                       Then after downloading the all the required data converted it into a CSV file called 
-                       *"british_airways_reviews_extended.csv"*
-                      
-                      
-- 02. Data Cleaning   : Imported all the essential Libraries
-                        Read the Dataset
-                        Checking the Null Values
-                        Checking all the Columns and Datatypes
-                        Renamking the Column from date to review_date
-                        Converting all the Column names to lower
-                        Dropping the Unnecessary Columns
-                        Remove "✅ Trip Verified" and "Not Verified" from reviews
-                        Function to clean ordinal suffixes like '1st', '2nd', '3rd', '4th'
+### 🔹 01. Data Collection
+- Scraped ~4000 reviews from the Skytrax website.
+- Exported and structured the data into a CSV file:  
+  **`british_airways_reviews_extended.csv`**
 
+### 🔹 02. Data Cleaning
+- Imported essential Python libraries.
+- Read and explored the dataset (null values, data types, column names).
+- Renamed `date` to `review_date` and converted all column names to lowercase.
+- Dropped unnecessary columns for clarity.
+- Cleaned the review text by removing:
+  - “✅ Trip Verified”
+  - “Not Verified”
+- Implemented a function to clean ordinal suffixes like `1st`, `2nd`, `3rd`, etc.
 
-- 03. ExploExploratory Data Analysis (EDA) : After Cleaning the Dataset converted all columns to numerical values in 
-                                            order to find the relation.
+### 🔹 03. Exploratory Data Analysis (EDA)
+- Transformed categorical data into numerical form for better analysis.
+- Visualized patterns and relationships between different variables.
 
+### 🔹 04. Deliverable
+- Submitted a presentation (**PPTX**) summarizing key findings and visualizations.
 
-- 04. Submitted the PPTX.
+---
 
+## 🧹 TASK 2 – **Customer Booking Prediction**
 
+### 🔹 01. Data Preparation
+- Collected and cleaned a new dataset (~5000 entries):  
+  **`customer_booking.csv`**
+- Standard data preprocessing:
+  - Handled missing values.
+  - Renamed `date` to `review_date`.
+  - Converted all column names to lowercase.
+  - Dropped irrelevant columns.
 
+### 🔹 02. Model Building
+- Implemented a **RandomForestClassifier** to predict customer booking behavior.
+- Performed:
+  - **Train/Test Split**
+  - **Cross-Validation** with **ROC AUC**
+  - Evaluation using **ROC_AUC_SCORE**
+- Visualized results using **Matplotlib** and **Seaborn**.
 
+### 🔹 03. Deliverable
+- Submitted a presentation (**PPTX**) explaining the model workflow, evaluation, and insights.
 
+---
 
-
-
-
-# TASK 2
-
-- 01. Data Cleaning : Collected the Data from the website called Skytrax which had around 5000 entries about the BA.<br>
-                       Then after downloading the all the required data converted it into a CSV file called <br>
-                       *"customer_booking.csv"*<br>
-                        Imported all the essential Libraries
-                        Read the Dataset
-                        Checking the Null Values
-                        Checking all the Columns and Datatypes
-                        Renamking the Column from date to review_date
-                        Converting all the Column names to lower
-                        Dropping the Unnecessary Columns
-
-
-- 02. Model Training : After Cleaning the Dataset made a model using RandomForestClassifier.
-                        Trained the model using train_test_split.
-                        Cross-validation with ROC AUC.
-                        ROC_AUC_SCORE.
-                        Visualization using Matplotlib and Seaborn.
-
-
-- 03. Submitted the PPTX.
+## 🚀 Tools & Technologies
+- **Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)**
+- **Web Scraping** (BeautifulSoup/Selenium)
+- **Machine Learning** (Random Forest)
+- **EDA & Visualization**
+- **PowerPoint** for stakeholder presentation
