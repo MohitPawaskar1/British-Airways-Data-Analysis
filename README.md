@@ -41,9 +41,9 @@ Here is the step by step guide what I did
 
 # TASK 2
 
-- 01. Data Cleaning : Collected the Data from the website called Skytrax which had around 5000 entries about the BA.
-                       Then after downloading the all the required data converted it into a CSV file called 
-                       *"customer_booking.csv"*
+- 01. Data Cleaning : Collected the Data from the website called Skytrax which had around 5000 entries about the BA.<br>
+                       Then after downloading the all the required data converted it into a CSV file called <br>
+                       *"customer_booking.csv"*<br>
                         Imported all the essential Libraries
                         Read the Dataset
                         Checking the Null Values
