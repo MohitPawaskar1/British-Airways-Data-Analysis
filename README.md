@@ -5,9 +5,9 @@
 
 ---
 
-## 🎓 Certificate of Completion
+🎓 **Certificate of Completion**  
+![Certificate](images/Certificate.png)
 
-![Certificate](D:\British Airways - Web Svrapping\Certificate.png)
 
 ---
 
